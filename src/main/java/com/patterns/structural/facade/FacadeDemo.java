@@ -4,7 +4,12 @@ public class FacadeDemo {
 
     public static void main(String[] args) {
 
-        System.out.println("ads");
+        JdbcFacade jdbcFacade = new JdbcFacade();
 
+        jdbcFacade.createTable();
+
+        jdbcFacade.insertIntoTable();
+
+        jdbcFacade.getAddresses();
     }
 }
